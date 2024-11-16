@@ -64,14 +64,14 @@ blockquote {
 
 .tm-btn-primary {
   color: white;
-  background-color: #369;
+  background-color: rgb(9, 211, 29);
   padding: 14px 30px;
 }
 
 .tm-btn-primary:hover,
 .tm-btn-primary:focus {
   color: white;
-  background-color: #38B;
+  background-color: rgb(3, 148, 35);
 }
 
 /* Navbar */
@@ -119,8 +119,8 @@ blockquote {
 .tm-navbar.scroll .tm-nav-link:hover,
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
-  color: #FFF;
-  background-color: #369;
+  color: #111111;
+  background-color: rgb(7, 181, 10);
 }
 
 .navbar-toggler {
@@ -258,11 +258,14 @@ blockquote {
 
 .tm-icon {
   display: block;
-  color: #37A;
+  color: rgba(17, 133, 36, 0.655);
 }
 
 .tm-continue {
 	padding: 20px 0 30px 0;
+}
+.col-lg-5 h2{
+  color: #111111;
 }
 
 /* Testimonials */
@@ -512,106 +515,126 @@ figure.effect-honey:hover h2 i {
 /* Contact */
 
 #contact {
-  color: white;
-  background-color: #001828;
-  background-image: url(../img/infinite-loop-03.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 980px;
-  position: relative;
-  padding-bottom: 50px;
-  padding-top: 100px;
+  background: whitesmoke;
 }
 
-.contact-item {
-  margin-left: 20px;
-  margin-bottom: 50px;
+ #contact .section-title {
+  padding-bottom: 20px;
 }
 
-.item-link {
-  display: flex;
-  align-items: center;
+#contact h2 > small,
+#contact p,
+#contact a {
+  color: #f9f9f9;
 }
 
-.item-link i,
-.item-link span {
-  color: white;
-  transition: all 0.3s ease;
+#contact-form {
+  padding: 1em 0;
 }
 
-.item-link:hover i,
-.item-link:hover span {
-  color: #3496d8;
+#contact-form .col-md-12,
+#contact-form .col-md-4 {
+  padding-left: 0;
 }
 
-.tm-input {
-	margin: 0 0 20px 0;
-	width: 90%;
-  padding: 8px 20px;
-  border-radius: 6px;
-  border: 1px solid white;
+#contact-form .form-control {
+  border: 0;
+  border-radius: 5px;
+  box-shadow: none;
+  margin: 10px 0;
+}
+
+#contact-form input {
+  height: 50px;
+}
+
+#contact-form input[type='submit'] {
+  border-radius: 50px;
+  border: 1px solid transparent;
+}
+
+#contact-form input[type='submit']:hover {
   background: transparent;
-  color: white;
+  border-color: #ffffff;
+  color: #ffffff;
 }
 
-.tm-btn-submit {
-	font-size: 0.9em;
-	color: #fff;
-	background-color: #369;
-	width: 50%;
-	margin-bottom: 60px;
+
+
+
+/*---------------------------------------
+   FOOTER              
+-----------------------------------------*/
+
+footer {
+  background-color: #2bbf0dba; /* Light background color for better visibility */
+  color: #f8f8f8; /* Light grey text for good contrast */
+  padding: 40px 0;
 }
 
-.tm-btn-submit:hover {
-	color: #fff;
-	background-color: #38B;
+footer h2 {
+  font-size: 18px;
+  color: #0c0c0c; /* Light grey for headings */
+  margin-bottom: 15px;
 }
 
-::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
-  opacity: 1; /* Firefox */
+footer p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #050505; /* Slightly darker grey for paragraphs */
 }
 
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: white;
-}
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: white;
-}
-
-.tm-footer {
-  position: absolute;
-  bottom: 35px;
-  left: 0;
-  right: 0;
-  padding: 0 15px;
-}
-
-.tm-footer a {
-	color: #fff;
-}
-
-.tm-footer a:hover {
-	color: #9CF;
-}
-
-.tm-footer-link {
-  color: white;
-}
-
-.tm-footer-link:hover,
-.tm-footer-link:focus {
-  color: #38B;
+footer a {
+  color: #0e0e0e; /* White color for links */
   text-decoration: none;
 }
 
-p {
-  line-height: 1.9;
+footer a:hover {
+  color: #1d28f2; /* Light blue on hover for links */
 }
+
+footer .contact-info p {
+  margin: 5px 0;
+}
+
+footer .social-icon {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+footer .social-icon li {
+  margin-right: 15px;
+}
+
+footer .social-icon a {
+  font-size: 24px;
+  color: #090909; /* White color for social media icons */
+  transition: color 0.3s;
+}
+
+footer .social-icon a:hover {
+  color: #1DA1F2; /* Light blue on hover for icons */
+}
+
+footer .copyright-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #121212; /* Darker grey for copyright text */
+}
+
+footer .copyright-text a {
+  color: #070707; /* White for the design link */
+  text-decoration: none;
+}
+
+footer .copyright-text a:hover {
+  text-decoration: underline;
+}
+
 
 @media (min-width: 768px) {
   .tm-intro-text-container {
