@@ -515,7 +515,7 @@ figure.effect-honey:hover h2 i {
 /* Contact */
 
 #contact {
-  background: whitesmoke;
+  background: rgb(229, 232, 234);
 }
 
  #contact .section-title {
@@ -558,6 +558,7 @@ figure.effect-honey:hover h2 i {
   border-color: #ffffff;
   color: #ffffff;
 }
+ 
 
 
 
